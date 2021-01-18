@@ -20,6 +20,6 @@ def first_word(string)
 end
 
 def titleize(string)
-    little_words=["a", "an", "and", "the", "or", "for", "of", "nor"]
+    little_words=["and", "the"]
     return string.split(' ').each_with_index.map{|word, index| little_words.include?(word) && index > 0 ? word : word.capitalize }.join(' ')
 end
